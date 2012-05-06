@@ -5,6 +5,6 @@ import problems._
 object ProjectEuler {
   def main(args: Array[String]): Unit = {
     println("START")
-    Problem003.run
+    Problem004.run
   }
 }
