@@ -5,9 +5,7 @@ package problems
   *
   *
   */
-object Problem000 extends Problem {
-  val Number = 0
-
+object Problem000 extends Problem(0) {
   protected def solution = {
     sys.error("Not implemented")
   }

@@ -6,9 +6,7 @@ package problems
   *
   * Find the sum of all the multiples of 3 or 5 below 1000.
   */
-object Problem001 extends Problem {
-  val Number = 1
-
+object Problem001 extends Problem(1) {
   protected def solution =
      (1 until 1000).filter(e => e%3==0 || e%5==0) sum
 }

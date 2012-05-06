@@ -1,11 +1,10 @@
 package com.ferega.pe
 
-trait Problem extends Timer[Long] {
-  val Number: Int
+abstract class Problem(val number: Int) extends Timer[Long] {
   def run {
     val tr = time(solution)
-    println("Problem %03d Time:     %d ms".format(Number, tr.time))
-    println("Problem %03d Solution: %s".format(Number, tr.result))
+    println("Problem %03d Time:     %d ms".format(number, tr.time))
+    println("Problem %03d Solution: %s".format(number, tr.result))
   }
 
   protected def solution: Long
